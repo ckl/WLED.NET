@@ -59,6 +59,10 @@ public sealed class StateRequest
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public int? Timebase { get; set; }
 
+    [JsonPropertyName("rb")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public bool? Reboot { get; set; }
+
     public static StateRequest From(StateResponse stateResponse)
     {
         return new StateRequest()
