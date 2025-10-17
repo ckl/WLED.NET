@@ -115,4 +115,10 @@ public sealed class InformationResponse
     /// </summary>
     [JsonPropertyName("ip")]
     public string NetworkAddress { get; set; } = null!;
+
+    /// <summary>
+    /// Number of other WLED devices discovered on the network. -1 if Node discovery disabled. (since 0.12.0)
+    /// </summary>
+    [JsonPropertyName("ndc")]
+    public int NumDevicesDiscovered { get; set; } = 0;
 }
