@@ -45,6 +45,18 @@ public sealed class InformationResponse
     public bool Live { get; set; }
 
     /// <summary>
+    /// Info about the realtime data source.
+    /// </summary>
+    [JsonPropertyName("lm")]
+    public string Lm { get; set; } = null!;
+
+    /// <summary>
+    /// Info about the realtime data source.
+    /// </summary>
+    [JsonPropertyName("lip")]
+    public string Lip { get; set; } = null!;
+
+    /// <summary>
     /// Number of effects included.
     /// </summary>
     [JsonPropertyName("fxcount")]
