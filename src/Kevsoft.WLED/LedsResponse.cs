@@ -12,7 +12,7 @@ public sealed class LedsResponse
     /// Current frames per second. (available since 0.12.0)
     /// </summary>
     [JsonPropertyName("fps")]
-    public byte Fps { get; set; }
+    public int Fps { get; set; }
 
     /// <summary>
     /// Logical AND of all active segment's virtual light capabilities
